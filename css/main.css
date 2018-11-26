@@ -675,6 +675,12 @@ table tr td :last-child {
   margin-bottom: 0;
 }
 
+@font-face {
+  font-family: 'Existence-StencilLight';
+  src: url('../fonts/Existence-StencilLight.otf') format('opentype');
+}
+
+
 /* --- Code blocks --- */
 
 pre {
