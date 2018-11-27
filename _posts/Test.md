@@ -14,4 +14,9 @@ Can we make sure we don't send our weakest person?"**
 
 The solution to this problem can be found [here](https://artofproblemsolving.com/3b1b).
 
-I misunderstood the problem, and instead tried to solve it assuming the games were made at random. After making an effort to solve a much more difficult version of the problem, I realized the mistake but decided to keep trying to solve my version of the problem.
+I misunderstood the problem, and instead tried to solve it assuming the games were made at random. After making an effort to solve a much more difficult version of the problem, I realized the mistake but decided to keep trying to solve my version of the problem for fun.
+
+
+
+##Can we determine the strongest player out of 20 in 10 randomized tug of war matches?
+**I shall attempt to solve this by creating a simulation and analyzing the results**
