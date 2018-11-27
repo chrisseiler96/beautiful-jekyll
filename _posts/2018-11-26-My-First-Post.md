@@ -114,7 +114,7 @@ def sim_ten_games():
   return game1
 ```
 
-Member 0|Member 1|Member 2|Member 3|Member 4|Member 5|Member 6|Member 7|Member 8|Member 9|Team|Won
+<center>Member 0|Member 1|Member 2|Member 3|Member 4|Member 5|Member 6|Member 7|Member 8|Member 9|Team|Won
 ---|---|---|---|---|---|---|---|---|---|---|---
 4.0|19.0|16.0|2.0|10.0|14.0|8.0|7.0|11.0|1.0|1.0|1.0
 5.0|17.0|3.0|6.0|12.0|15.0|9.0|13.0|0.0|18.0|2.0|0.0
@@ -136,7 +136,7 @@ Member 0|Member 1|Member 2|Member 3|Member 4|Member 5|Member 6|Member 7|Member 8
 13.0|16.0|12.0|4.0|0.0|14.0|5.0|1.0|3.0|18.0|2.0|1.0
 16.0|3.0|17.0|14.0|19.0|6.0|11.0|5.0|1.0|10.0|1.0|1.0
 4.0|12.0|9.0|8.0|2.0|15.0|7.0|13.0|0.0|18.0|2.0|0.0
-
+</center>
 
 
 ~~~
