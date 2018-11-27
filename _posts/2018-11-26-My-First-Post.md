@@ -114,6 +114,10 @@ def sim_ten_games():
   return game1
 ```
 
+
+### An Example DataFrame showing 20 games between the players arranged into a random team for each game
+***A single game is described by two seperate rows, the rows of two starting from the top, each row shows the numbers of the players on that team. 0 means a team lost that game, 1 means a team won that game.
+
 Member 0|Member 1|Member 2|Member 3|Member 4|Member 5|Member 6|Member 7|Member 8|Member 9|Team|Won
 ---|---|---|---|---|---|---|---|---|---|---|---
 4.0|19.0|16.0|2.0|10.0|14.0|8.0|7.0|11.0|1.0|1.0|1.0
