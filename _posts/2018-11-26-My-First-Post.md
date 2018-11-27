@@ -82,9 +82,13 @@ def sim_game(roster):
   team1_members = [i[0] for i in team1]
   team2_members = [i[0] for i in team2]
   
-  d = {'Team': [], 'Member 1': [],'Member 2': [],'Member 3': [],'Member 4': [],'Member 5': [],'Member 6': [],'Member 7': [],'Member 8': [],'Member 9': [],'Member 0': [],'Won':[]}
+  d = {'Team': [], 'Member 1': [],'Member 2': [],'Member 3': [],
+      'Member 4': [],'Member 5': [],'Member 6': [],'Member 7': [],
+      'Member 8': [],'Member 9': [],'Member 0': [],'Won':[]}
   df = pd.DataFrame(data=d)
-  df = df.append(pd.DataFrame([team1_members,team2_members],columns=['Member 1','Member 2','Member 3','Member 4','Member 5','Member 6','Member 7','Member 8','Member 9','Member 0',]))
+  df = df.append(pd.DataFrame([team1_members,team2_members],
+       columns=['Member 1','Member 2','Member 3','Member 4',
+       'Member 5','Member 6','Member 7','Member 8','Member 9','Member 0',]))
   df.Team[0] = 1
   df.Team[1] = 2
   if team1_score > team2_score:
