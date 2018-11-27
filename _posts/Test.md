@@ -19,4 +19,5 @@ I misunderstood the problem, and instead tried to solve it assuming the games we
 
 
 ##Can we determine the strongest player out of 20 in 10 randomized tug of war matches?
+
 **I shall attempt to solve this by creating a simulation and analyzing the results**
