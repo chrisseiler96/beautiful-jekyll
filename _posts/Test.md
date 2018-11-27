@@ -5,7 +5,7 @@ subtitle: Can we determine the strongest player out of 20 in 10 randomized tug o
 tags: [test]
 ---
 
-## One of my favorite math youtubers, 3Blue1Brown, posted a challenge problem from "The Art of Problem Solving" at the end of one of his videos
+## One of my favorite math youtubers, 3Blue1Brown, posted a challenge problem from "The Art of Problem Solving" at the end of one of his videos:
 
 **"AoPS must choose one of 20 people to send to a tug-of-war tournament. We don't care who we send, as long as we don't send our weakest person.**
 
