@@ -11,3 +11,7 @@ tags: [test]
 
 **Each Person has a different strength, but we don't know those strengths. We get 10 intramural 10-on-10 matches to determine who we send.
 Can we make sure we don't send our weakest person?"**
+
+The solution to this problem can be found [here](https://artofproblemsolving.com/3b1b).
+
+I misunderstood the problem, and instead tried to solve it assuming the games were made at random. After making an effort to solve a much more difficult version of the problem, I realized the mistake but decided to keep trying to solve my version of the problem.
