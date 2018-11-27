@@ -29,15 +29,15 @@ I misunderstood the problem, and instead tried to solve it assuming the games we
 **I shall attempt to solve this by creating a simulation and analyzing the results:**
 
 ## I will be using Python 3 and the following libraries:
-'''python
+```python
 import random
 from random import shuffle
 import pandas as pd
-'''
+```
 
 ## This function creates a Roster of 20 Players, all with a random strength value between 0 and 1:
 
-'''python
+```python
 def create_roster():
   players = {}
   keys = range(20)
@@ -49,12 +49,12 @@ def create_roster():
     players[i] = values[i]
 
   return(players)
-'''
+```
 
 ## This function breaks the roster into two random teams and simulates one tug of war game between them. It returns a table showing the players on each team and the winner of the match:
 
 **It accepts a roster from the above function as an argument**
-'''python
+```python
 def sim_game(roster):
   tuple_roster = list(roster.items())
   random.shuffle(tuple_roster)
@@ -95,7 +95,7 @@ def sim_game(roster):
     df.Won[1] = 1
   return df
 
-'''
+```
 
 
 
