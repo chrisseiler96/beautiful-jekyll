@@ -24,6 +24,83 @@ I misunderstood the problem, and instead tried to solve it assuming the games we
 
 
 
-## Can we determine the strongest player out of 20 in 10 randomized tug of war matches?
+# Can we determine the strongest player out of 20 in 10 randomized tug of war matches?
 
-**I shall attempt to solve this by creating a simulation and analyzing the results**
+**I shall attempt to solve this by creating a simulation and analyzing the results:**
+
+## I will be using Python 3 and the following libraries:
+~~~
+import random
+from random import shuffle
+import pandas as pd
+~~~
+
+## This function creates a Roster of 20 Players, all with a random strength value between 0 and 1:
+
+~~~
+def create_roster():
+  players = {}
+  keys = range(20)
+  values = []
+  for i in range(20):
+    values.append(random.uniform(0,1))
+
+  for i in keys:
+    players[i] = values[i]
+
+  return(players)
+~~~
+
+## This function breaks the roster into two random teams and simulates one tug of war game between them. It returns a table showing the players on each team and the winner of the match:
+
+**It accepts a roster from the above function as an argument**
+~~~
+def sim_game(roster):
+  tuple_roster = list(roster.items())
+  random.shuffle(tuple_roster)
+  shuffled_roster = tuple_roster
+
+
+  team1 = []
+  team2 = []
+
+
+  for i in range(10):
+    team1.append(shuffled_roster[i])
+  for i in range(10,20):
+    team2.append(shuffled_roster[i])
+  
+  
+  team1_score = sum(n for _, n in team1)
+  team2_score = sum(n for _, n in team2)
+
+  if team1_score > team2_score:
+    winner = "Team 1"
+  else:
+    winner = "Team 2"
+  
+  team1_members = [i[0] for i in team1]
+  team2_members = [i[0] for i in team2]
+  
+  d = {'Team': [], 'Member 1': [],'Member 2': [],'Member 3': [],'Member 4': [],'Member 5': [],'Member 6': [],'Member 7': [],'Member 8': [],'Member 9': [],'Member 0': [],'Won':[]}
+  df = pd.DataFrame(data=d)
+  df = df.append(pd.DataFrame([team1_members,team2_members],columns=['Member 1','Member 2','Member 3','Member 4','Member 5','Member 6','Member 7','Member 8','Member 9','Member 0',]))
+  df.Team[0] = 1
+  df.Team[1] = 2
+  if team1_score > team2_score:
+    df.Won[0] = 1
+    df.Won[1] = 0
+  else:
+    df.Won[0] = 0
+    df.Won[1] = 1
+  return df
+
+~~~
+
+
+
+
+
+~~~
+
+~~~
